@@ -39,7 +39,10 @@
           alert("You got it right!");
         } else {
           oops++;
-          alert("Sorry, ran out of guesses!");
+          alert("Sorry");
+        }
+        if(oops>10){
+            alert("Sorry,ran out of guesses")
         }
 
         const resultElement = document.getElementById("result");
